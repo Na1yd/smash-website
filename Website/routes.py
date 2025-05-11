@@ -16,10 +16,14 @@ def me():
     return render_template("me.html")
 
 
-@app.route("/petrocks/<int:id>")
-def petrocks(id):
-    return render_template("petrocks.html",id=id)
-
+@app.route("/all_characters")
+def all_characters():
+    conn = sqlite3.connect("")
+    cur = conn.cursor()
+    cur.execute('SELECT * FROM character')
+    characters = cur.fetchall()
+    conn.close()
+    return render_template('all_characters.html', characters = characters)
 
 
 if __name__ == "__main__":
