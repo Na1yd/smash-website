@@ -5,7 +5,6 @@ app = Flask(__name__)
 
 
 
-
 @app.route('/')
 def home():
     return render_template("home.html")
@@ -18,12 +17,12 @@ def me():
 
 @app.route("/all_characters")
 def all_characters():
-    conn = sqlite3.connect("")
+    conn = sqlite3.connect("Dk.db")
     cur = conn.cursor()
-    cur.execute('SELECT * FROM character')
-    characters = cur.fetchall()
+    cur.execute('SELECT * FROM Character')
+    Character = cur.fetchall()
     conn.close()
-    return render_template('all_characters.html', characters = characters)
+    return render_template('all_characters.html', Character = Character)
 
 
 if __name__ == "__main__":
