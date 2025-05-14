@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% block content %}
-{% for characters in characters %}
-<p>{{i}}</p>
+{% for Characters in Characters %}
+<p><a href="/Characters/{{Characters[0]}}">{{Characters[1]}}</a></p>
 {% endfor %}
 {% endblock %}
