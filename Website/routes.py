@@ -1,8 +1,7 @@
-from flask import Flask,render_template
+from flask import Flask, render_template
 import sqlite3
-#pip install flask
+# pip install flask
 app = Flask(__name__)
-
 
 
 @app.route('/')
@@ -22,7 +21,8 @@ def all_characters():
     cur.execute('SELECT * FROM Character')
     Characters = cur.fetchall()
     conn.close()
-    return render_template('all_characters.html', Characters = Characters)
+    return render_template('all_characters.html', Characters=Characters)
+
 
 @app.route("/Characters/<int:id>")
 def characters(id):
@@ -30,7 +30,7 @@ def characters(id):
     cur = conn.cursor()
     cur.execute("SELECT * FROM Character WHERE id=?",(id,))
     Character = cur.fetchone()
-    return render_template('character.html', Character = Character)
+    return render_template('character.html', Character=Character)
 
 
 if __name__ == "__main__":

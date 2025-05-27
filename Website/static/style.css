@@ -1,13 +1,16 @@
-.l{
-    font-family: 'Helvetica';
-    text-shadow: 2px 2px 8px #FF0000;
-    text-emphasis-color:#FF0000 ;
+.tag{
+    text-align: center;
+    color: #ffffff;
+    border-color: #400406;
+    border-radius: 40px;
+    align-self: center;
+    border-width: 700px;
+}
 
+.link {
+color: #ffffff;
+font-family: 150px;
+text-decoration: none;
 }
 
 
-.a{
-    font-family: 'Helvetica';
-    text-shadow: 2px 2px 8px #FF0000;
-    color:  rgb(255, 255, 255);
-}
