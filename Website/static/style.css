@@ -1,10 +1,58 @@
-.tag{
+
+body {
+    background-color: #424B54;
+    margin: 0px;
+
+}
+
+.main-body {
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #E8DB7D;
+    padding: 20px;
+    height: 100%;
+}
+
+.title {
+    text-align: center;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.navbar-button {
+    margin: 0px 120px 0px 120px;
+    background-color: #400406;
+    color: white;
+}
+
+.nav1{
+    text-align: left;
+    color: #ffffff;
+    border-color: #400406;
+    border-radius: 40px;
+    border-width: 700px;
+    display: inline;
+}
+
+.nav2{
     text-align: center;
     color: #ffffff;
     border-color: #400406;
     border-radius: 40px;
-    align-self: center;
     border-width: 700px;
+    display: inline;
+}
+
+.nav3{
+    text-align: right;
+    color: #ffffff;
+    border-color: #400406;
+    border-radius: 40px;
+    border-width: 700px;
+    display: inline;
 }
 
 .link {

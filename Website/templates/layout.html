@@ -6,13 +6,19 @@
     <title>Chimpanzine bannanini. Monkey Monkey Monkey uche ballannuchi</title>
     <link rel="stylesheet" href="/static/style.css">
 </head>
-<body style="background-color:rgb(26 29 33);">
-    <header>{% include "header.html" %}</header>
-    <nav> 
-        <h1 class="tag">Match ups</h1>   <h1 class="tag">home</h1>   <h1 class="tag">donkey Kong character tech</h1>
-    </nav>
-    <main>{% block content %} {% endblock %}</main>
-    <footer> Coohen hurt me brain </footer>
-</body>
-</html>
+<body>
+    <div class="main-body">
+        <div class="header">
+            <div class="title">
+                <h1>HEADER</h1>
+                <hr>
+            </div>
+            <div class="navbar">
+                <button class="navbar-button">Button</button>
+                <button class="navbar-button">Button</button>
+                <button class="navbar-button">Button</button>
+            </div>
+            <hr>
+        </div>
+        <p>{% block content %} {% endblock %}</p>
 
