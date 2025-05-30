@@ -20,39 +20,19 @@ body {
 .navbar {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    align-self: center;
 }
 
 .navbar-button {
-    margin: 0px 120px 0px 120px;
+    align-items: center;
+    margin: 0px 70px 0px 70px;
     background-color: #400406;
     color: white;
-}
-
-.nav1{
-    text-align: left;
-    color: #ffffff;
-    border-color: #400406;
-    border-radius: 40px;
-    border-width: 700px;
-    display: inline;
-}
-
-.nav2{
-    text-align: center;
-    color: #ffffff;
-    border-color: #400406;
-    border-radius: 40px;
-    border-width: 700px;
-    display: inline;
-}
-
-.nav3{
-    text-align: right;
-    color: #ffffff;
-    border-color: #400406;
-    border-radius: 40px;
-    border-width: 700px;
-    display: inline;
+    border-radius: 10px;
+    padding:20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    
 }
 
 .link {
