@@ -7,18 +7,16 @@
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <div class="main-body">
-        <div class="header">
-            <div class="title">
-                <h1>HEADER</h1>
-                <hr>
-            </div>
-            <div class="navbar">
-                <button class="navbar-button">Match ups</button>
-                <button class="navbar-button">Home</button>
-                <button class="navbar-button">Donkey kong character tech</button>
-            </div>
-            <hr>
+    <div class="header">
+        <div class="title">
+            <h1>HEADER</h1>
         </div>
-        <p>{% block content %} {% endblock %}</p>
+        <div class="navbar">
+            <button class="navbar-button">Match ups</button>
+            <button href="home.html" class="navbar-button">Home</button>
+            <button class="navbar-button"> <a href="/all_characters"> class="navbar-button">Donkey kong character tech</button>
+        </div>
+    </div>
+    <div class="main-body">
+        <p> {% block content %} {% endblock %}</p>
 

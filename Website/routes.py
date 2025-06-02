@@ -28,7 +28,7 @@ def all_characters():
 def characters(id):
     conn = sqlite3.connect("Dk.db")
     cur = conn.cursor()
-    cur.execute("SELECT * FROM Character WHERE id=?",(id,))
+    cur.execute("SELECT * FROM Character WHERE id=?", (id,))
     Character = cur.fetchone()
     return render_template('character.html', Character=Character)
 

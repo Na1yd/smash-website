@@ -5,12 +5,18 @@ body {
 
 }
 
+.header {
+    background-color: #424B54;
+    margin-bottom: 40px;
+}
+
 .main-body {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     background-color: #E8DB7D;
     padding: 20px;
     height: 100%;
+    border-radius: 20px;
 }
 
 .title {
@@ -29,9 +35,9 @@ body {
     background-color: #400406;
     color: white;
     border-radius: 10px;
-    padding:20px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding:30px;
+    padding-left: 50px;
+    padding-right: 60px;
     
 }
 
