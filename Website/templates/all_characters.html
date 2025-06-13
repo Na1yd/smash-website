@@ -1,8 +1,15 @@
 {% extends "layout.html" %}
+
 {% block content %}
-{% for Characters in Characters %}
-<p class="card"><a href="/Characters/{{Characters[0]}}"><img src="Website_images/Mario.png" alt={{Characters[1]}}> </a></p>
-{% endfor %}
+<div class="grid-container">
+  {% for character in Characters %}
+    <div class="card">
+      <a href="/Characters/{{ character[0] }}">
+        <img src="../static/Website_images/{{ character[1] }}.png" alt="{{ character[1] }}">
+      </a>
+    </div>
+  {% endfor %}
+</div>
 {% endblock %}
 
-<img src="{{ url_for('static', filename='Website_images/Mario.png') }}"
+
