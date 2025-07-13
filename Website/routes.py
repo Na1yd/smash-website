@@ -32,6 +32,10 @@ def characters(id):
     Character = cur.fetchone()
     return render_template('character.html', Character=Character)
 
+@app.route("/tech")
+def tech():
+    return render_template("tech.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)
