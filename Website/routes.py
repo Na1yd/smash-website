@@ -23,9 +23,10 @@ def all_characters():
     conn.close()
     return render_template('all_characters.html', Characters=Characters)
 
+
 @app.errorhandler(404)
 def page_not_found(e):
-    return render_template("404.html"), 409
+    return render_template("404.html"), 404
 
 
 @app.route("/Characters/<int:id>")
