@@ -1,7 +1,9 @@
 {% extends "layout.html" %}
 {% block content %}
+<img src="../static/Website_images/{{ Character[1] }}.png" alt="{{ Character[1] }}">
 {% for item in Character %}
-<p> {{ item }}</p>
+  {% if item != 2 %}
+    <p>{{ item }}</p>
+  {% endif %}
 {% endfor %}
 {% endblock %}
-{{Character.1}}.png

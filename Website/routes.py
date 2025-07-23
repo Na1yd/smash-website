@@ -25,8 +25,13 @@ def all_characters():
 
 
 @app.errorhandler(404)
-def page_not_found(e):
+def page_not_found(Error):
     return render_template("404.html"), 404
+
+
+@app.errorhandler(500)
+def special_exeption_handler(Error):
+    return render_template("500.html"), 500
 
 
 @app.route("/Characters/<int:id>")
@@ -36,6 +41,7 @@ def characters(id):
     cur.execute("SELECT * FROM Character WHERE id=?", (id,))
     Character = cur.fetchone()
     return render_template('character.html', Character=Character)
+
 
 @app.route("/tech")
 def tech():
