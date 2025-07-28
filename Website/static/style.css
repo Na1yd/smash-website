@@ -1,6 +1,6 @@
 
 body {
-    background-color: #424B54;
+    background-color: #424b54;
     margin: 0px;
 
 }
@@ -17,16 +17,19 @@ body {
     padding: 20px;
     height: 100%;
     border-radius: 20px;
+    
 }
 
 .title {
     text-align: center;
+    
 }
 
 .navbar {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-self: center;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .navbar-button {
@@ -38,6 +41,7 @@ body {
     padding:30px;
     padding-left: 50px;
     padding-right: 50px;
+    transition: background 0.3s ease, color 0.3s ease;
     
 }
 
@@ -50,6 +54,7 @@ text-decoration: none;
 img{
     width: 30%;
     border-radius: 50px;
+    transition-duration: 0.3s;
 }
 
 .three-column{
@@ -61,6 +66,7 @@ img{
     margin: auto;
     margin-top: 40px;
     margin-bottom: 50px;
+    transition: background 0.3s ease, color 0.3s ease;
 
 }
 .grid-container {
@@ -80,4 +86,14 @@ img{
 
   .card {
     text-align: center;
+  }
+
+  .navbar-button:hover {
+    background: #E8DB7D;
+    color: #ffffff;
+    box-shadow: 0 8px 20px #400406;
+  }
+  img:hover {
+    scale: 120%;
+    rotate: 340deg;
   }
