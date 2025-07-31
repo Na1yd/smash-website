@@ -53,31 +53,30 @@ text-decoration: none;
 
 img{
     width: 30%;
-    border-radius: 50px;
-    transition-duration: 0.3s;
+    border-radius: 50x;
+    transition-duration: 0.9s;
 }
 
 .three-column{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    width: 80%;
-    gap: 100px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    width: 100%;
+    gap: 120px;
     margin: auto;
     margin-top: 40px;
     margin-bottom: 50px;
     transition: background 0.3s ease, color 0.3s ease;
-
 }
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 100px;
     padding: 20px;
   }
 
   .card img {
-    width: 100%;            
+    width: 120%;            
     height: 600px;            
     object-fit: cover;         
     display: block;
@@ -95,5 +94,5 @@ img{
   }
   img:hover {
     scale: 120%;
-    rotate: 340deg;
+    rotate: 0deg;
   }
