@@ -19,9 +19,11 @@ def all_characters():
     conn = sqlite3.connect("Dk.db")
     cur = conn.cursor()
     cur.execute('SELECT * FROM Character')
+    # Fetch all characters from the database
     Characters = cur.fetchall()
     conn.close()
     return render_template('all_characters.html', Characters=Characters)
+
 
 
 @app.errorhandler(404)
@@ -31,6 +33,9 @@ def page_not_found(Error):
 
 @app.errorhandler(500)
 def special_exeption_handler(Error):
+    # This is a special exception handler for 500 errors
+    # You can log the error or perform other actions here
+    print(f"An error occurred: {Error}")
     return render_template("500.html"), 500
 
 
@@ -39,6 +44,7 @@ def characters(id):
     conn = sqlite3.connect("Dk.db")
     cur = conn.cursor()
     cur.execute("SELECT * FROM Character WHERE id=?", (id,))
+    conn.commit()
     Character = cur.fetchone()
     return render_template('character.html', Character=Character)
 
