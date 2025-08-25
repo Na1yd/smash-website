@@ -1,6 +1,11 @@
 {% extends "layout.html" %}
-
 {% block content %}
+<style>
+  img:hover {
+  scale: 120%;
+  rotate: 0deg;
+}
+</style>
 <div class="grid-container">
   {% for character in Characters %}
     <div class="card">

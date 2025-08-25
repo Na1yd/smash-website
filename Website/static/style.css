@@ -100,7 +100,3 @@ img{
     color: #ffffff;
     box-shadow: 0 8px 20px #400406;
   }
-  img:hover {
-    scale: 120%;
-    rotate: 0deg;
-  }
