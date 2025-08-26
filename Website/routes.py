@@ -9,9 +9,6 @@ def home():
     return render_template("home.html")
 
 
-@app.route("/me")
-def me():
-    return render_template("me.html")
 
 
 @app.route("/all_characters")

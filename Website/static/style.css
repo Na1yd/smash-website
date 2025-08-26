@@ -3,7 +3,7 @@
 
 }
 body {
-    background-color: #424b54;
+    background: linear-gradient(180deg, #424b54,#400406);
     margin: 0px;
 
 }
@@ -96,7 +96,7 @@ img{
   }
 
   .navbar-button:hover {
-    background: #E8DB7D;
+    background: #424b54;
     color: #ffffff;
     box-shadow: 0 8px 20px #400406;
   }
