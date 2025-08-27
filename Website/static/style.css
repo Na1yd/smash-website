@@ -9,18 +9,17 @@ body {
 }
 
 .header {
-    background-color: #424B54;
     margin-bottom: 40px;
 }
 
 .main-body {
     margin-left: 5%;
     margin-right: 5%;
-    background-color: #E8DB7D;
     padding: 20px;
     height: 100%;
     border-radius: 20px;
-    
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .title {
@@ -126,17 +125,7 @@ h1 {
     text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
   }
 
-
-
-/* .container {
-    background: rgba(0, 0, 0, 0.25);
-    padding: 40px 60px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    max-width: 500px;
-    width: 100%;
- }
-a {
+.error {
     display: inline-block;
     padding: 14px 32px;
     font-size: 1.1rem;
@@ -147,14 +136,15 @@ a {
     text-decoration: none;
     box-shadow: 0 6px 15px #E8DB7D;
     transition: background 0.3s ease, color 0.3s ease;
+    text-align: center;
 }
 
-  a:hover {
+.error:hover {
     background: #424b54;
     color: #ffffff;
     box-shadow: 0 8px 20px rgba(46, 204, 113, 0.6);
  }
- h1 {
+ /* h1 {
     font-size: 8rem;
     margin-bottom: 0;
     font-weight: 700;
