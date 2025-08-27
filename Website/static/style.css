@@ -65,6 +65,11 @@ img{
     
 }
 
+img:hover {
+    scale: 120%;
+    rotate: 0deg;
+  }
+
 .three-column{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -83,7 +88,7 @@ img{
     padding: 20px;
   }
 
-  .card img {
+.card img {
     width: 100%;            
     height: 200px;            
     object-fit: cover;         
@@ -91,12 +96,85 @@ img{
     border-radius: 8px;
   }
 
-  .card {
+.card {
     text-align: center;
   }
 
-  .navbar-button:hover {
+.navbar-button:hover {
     background: #424b54;
     color: #ffffff;
     box-shadow: 0 8px 20px #400406;
   }
+
+.new_move{
+    background-color: orange;
+    padding:100%;
+    margin:0;
+}
+
+hr{
+    height:2px ;
+    background-color:#400406 ;
+    border: none;
+}
+
+h1 {
+    font-size: 8rem;
+    margin-bottom: 0;
+    font-weight: 700;
+    letter-spacing: 8px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  }
+
+
+
+/* .container {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 40px 60px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+ }
+a {
+    display: inline-block;
+    padding: 14px 32px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #424B54;
+    background: #ffffff;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 6px 15px #E8DB7D;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+  a:hover {
+    background: #424b54;
+    color: #ffffff;
+    box-shadow: 0 8px 20px rgba(46, 204, 113, 0.6);
+ }
+ h1 {
+    font-size: 8rem;
+    margin-bottom: 0;
+    font-weight: 700;
+    letter-spacing: 8px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  }
+
+h2 {
+    font-size: 2.2rem;
+    margin: 10px 0 20px;
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  }
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+} */
+
+
+
+
