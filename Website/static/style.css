@@ -1,6 +1,6 @@
 
 *{
-
+text-decoration: none;
 }
 body {
     background: linear-gradient(180deg, #424b54,#400406);
@@ -37,14 +37,14 @@ body {
 .navbar-button {
     align-items: center;
     margin: 0px 70px 0px 70px;
-    background-color: #400406;
-    color: white;
+    background: #bbbbbb;
+    color: #424B54;
     border-radius: 10px;
     padding:30px;
     padding-left: 50px;
     padding-right: 50px;
-    transition: background 0.3s ease, color 0.3s ease;
-    
+    border-radius: 30px;
+    transition: background 0.3s ease, color 0.3s ease; 
 }
 
 .link {
@@ -61,6 +61,7 @@ img{
     outline-width: 10px;
     outline-style: solid;
     outline-color: #424b54;
+    color: black;
     
 }
 
@@ -95,14 +96,19 @@ img:hover {
     border-radius: 8px;
   }
 
+  .img_info{
+  align-self: center;
+  
+  }
+
 .card {
     text-align: center;
   }
 
 .navbar-button:hover {
-    background: #424b54;
-    color: #ffffff;
-    box-shadow: 0 8px 20px #400406;
+  background: #424b54;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(46, 204, 113, 0.6);
   }
 
 .new_move{
@@ -134,9 +140,8 @@ h1 {
     background: #ffffff;
     border-radius: 30px;
     text-decoration: none;
-    box-shadow: 0 6px 15px #E8DB7D;
     transition: background 0.3s ease, color 0.3s ease;
-    text-align: center;
+    text-align:center;
 }
 
 .error:hover {
@@ -144,27 +149,7 @@ h1 {
     color: #ffffff;
     box-shadow: 0 8px 20px rgba(46, 204, 113, 0.6);
  }
- /* h1 {
-    font-size: 8rem;
-    margin-bottom: 0;
-    font-weight: 700;
-    letter-spacing: 8px;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
-  }
 
-h2 {
-    font-size: 2.2rem;
-    margin: 10px 0 20px;
-    font-weight: 600;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
-  }
-
-p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-} */
-
-
-
-
+ .container{
+  text-align: center;
+ }

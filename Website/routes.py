@@ -9,8 +9,6 @@ def home():
     return render_template("home.html")
 
 
-
-
 @app.route("/all_characters")
 def all_characters():
     conn = sqlite3.connect("Dk.db")
@@ -20,7 +18,6 @@ def all_characters():
     Characters = cur.fetchall()
     conn.close()
     return render_template('all_characters.html', Characters=Characters)
-
 
 
 @app.errorhandler(404)
