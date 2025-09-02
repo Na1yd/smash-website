@@ -1,9 +1,10 @@
 {% extends "layout.html" %}
 {% block content %}
 <img class="img_info" src="../static/Website_images/{{ Character[1] }}.png" alt="{{ Character[1] }}">
-{% for item in Character %}
-  {% if item != 2 %}
+{% select name, How_to_matchup for item in Character %}
+  {% if item != 1 %}
     <p>{{ item }}</p>
   {% endif %}
 {% endfor %}
 {% endblock %}
+<!-- Make Item white it is hard to see in black -->
