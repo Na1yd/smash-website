@@ -53,7 +53,7 @@ font-family: 150px;
 text-decoration: none;
 }
 
-img{
+.img_select{
     width: 30%;
     border-radius: 50x;
     transition-duration: 0.3s;
@@ -65,7 +65,7 @@ img{
     
 }
 
-img:hover {
+.img_select:hover {
     scale: 120%;
     rotate: 0deg;
   }
@@ -97,7 +97,14 @@ img:hover {
   }
 
   .img_info{
-  align-self: center;
+    width: 30%;
+    border-radius: 50x;
+    transition-duration: 0.3s;
+    outline: auto;
+    outline-width: 10px;
+    outline-style: solid;
+    outline-color: #424b54;
+    color: black;
   
   }
 
