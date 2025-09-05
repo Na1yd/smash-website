@@ -1,9 +1,12 @@
 {% extends "layout.html" %}
 {% block content %}
-<img class="img_info" src="../static/Website_images/{{ Character[0] }}.png" alt="{{ Character[0] }}">
+<img class="img_info" 
+    src="../static/Website_images/{{ Character[0] }}.png" 
+    srcset="../static/Website_images/{{ Character[0] }}.png 100x, ../static/Website_images/{{ Character[0] }}.png 200x" 
+    alt="{{ Character[0] }}">
 {% for item in Character %}
   {% if item != 2 %}
-    <p>{{ item }}</p>
+    <p class="info-text">{{ item }}</p>
   {% endif %}
 {% endfor %}
 {% endblock %}

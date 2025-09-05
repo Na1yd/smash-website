@@ -38,7 +38,7 @@ body {
     align-items: center;
     margin: 0px 70px 0px 70px;
     background: #bbbbbb;
-    color: #424B54;
+    color: #101111;
     border-radius: 10px;
     padding:30px;
     padding-left: 50px;
@@ -98,14 +98,28 @@ text-decoration: none;
 
   .img_info{
     width: 30%;
-    border-radius: 50x;
+    border-radius: 50px;
     transition-duration: 0.3s;
     outline: auto;
     outline-width: 10px;
     outline-style: solid;
     outline-color: #424b54;
     color: black;
+    text-align: center;
+    image-resolution: from-image;
   
+  }
+
+p{
+
+  text-align: center;
+
+}
+
+  .info-text{
+    text-align: center;
+    align-content: center;
+
   }
 
 .card {
