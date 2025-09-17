@@ -46,10 +46,23 @@ def characters(id):
     conn = sqlite3.connect("Dk.db")
     cur = conn.cursor()
     cur.execute(
-            "SELECT name, How_to_play_matchup,Pdko_percent_ps2,Apdk_percent_ps2 FROM Character WHERE id=?", (id,))
+            "SELECT name, How_to_play_matchup,Pdko_percent_ps2,"
+            "Apdk_percent_ps2 FROM Character WHERE id=?", (id,))
     conn.commit()
     Character = cur.fetchone()
     return render_template('character.html', Character=Character)
+
+
+@app.route("/Game_Franchises/<int:id>")
+def Game_Franchise(id):
+    conn = sqlite3.connect("Dk.db")
+    cur = conn.cursor()
+    cur.execute(
+            "SELECT Franchise , character1,character1,character1,"
+            "character1,character1 FROM Game_Franchise WHERE id=?", (id,))
+    conn.commit()
+    Game_Franchise = cur.fetchone()
+    return render_template('Game_Franchise.html', Game_Franchise=Game_Franchise)
 
 
 @app.route("/tech")
