@@ -46,10 +46,13 @@ def characters(id):
     conn = sqlite3.connect("Dk.db")
     cur = conn.cursor()
     cur.execute(
-            "SELECT name, How_to_play_matchup,Pdko_percent_ps2,Apdk_percent_ps2 FROM Character WHERE id=?", (id,))
-    conn.commit()
+            "SELECT name, How_to_play_matchup,Pdko_percent_ps2,Apdk_percent_ps2 FROM Character WHERE id= ?", (id,))
+    # No need to commit on SELECT
     Character = cur.fetchone()
-    return render_template('character.html', Character=Character)
+    columns = [desc[0] for desc in cur.description] if cur.description else []
+    CharacterFields = list(zip(columns, Character)) if Character else []
+    conn.close()
+    return render_template('character.html', Character=Character, CharacterFields=CharacterFields)
 
 
 @app.route("/tech")
