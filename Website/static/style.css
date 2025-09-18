@@ -45,6 +45,7 @@ body {
     padding-right: 50px;
     border-radius: 30px;
     transition: background 0.3s ease, color 0.3s ease; 
+    font-size: 40px;
 }
 
 .link {
@@ -61,7 +62,7 @@ text-decoration: none;
     outline-width: 10px;
     outline-style: solid;
     outline-color: #424b54;
-    color: black;
+    color: whitesmoke;
     
 }
 
@@ -104,14 +105,14 @@ text-decoration: none;
     outline-width: 10px;
     outline-style: solid;
     outline-color: #424b54;
-    color: black;
+    color: rgb(103, 105, 148) ;
     text-align: center;
     image-resolution: from-image;
   
   }
 
 p{
-
+  color: rgb(103, 105, 148) ;
   text-align: center;
 
 }
@@ -119,7 +120,7 @@ p{
   .info-text{
     text-align: center;
     align-content: center;
-
+    color: rgb(103, 105, 148) ;
   }
 
 .card {
@@ -142,6 +143,11 @@ hr{
     height:2px ;
     background-color:#400406 ;
     border: none;
+}
+
+h2{
+
+  color: rgb(103, 105, 148) ;
 }
 
 h1 {
