@@ -46,8 +46,8 @@ def characters(id):
     conn = sqlite3.connect("Dk.db")
     cur = conn.cursor()
     cur.execute(
-            "SELECT name,How to play matchup,Pdko percent ps2,"
-            "Apdk percent ps2 FROM Character WHERE id=?", (id,))
+            "SELECT name, How_to_play_matchup,Pdko_percent_ps2,"
+            "Apdk_percent_ps2 FROM Character WHERE id=?", (id,))
     Character = cur.fetchone()
     columns = [desc[0] for desc in cur.description] if cur.description else []
     CharacterFields = list(zip(columns, Character)) if Character else []
