@@ -6,7 +6,7 @@
     alt="{{ Character[0] }}">
 {% for label, value in CharacterFields %}
   {% if value != 2 %}
-    <p class="info-text"><strong>({{ label }}) :</strong> {{ value }}</p>
+    <p class="info-text"><strong>({ label }) :</strong> {{ value }}</p>
   {% endif %}
 {% endfor %}
 {% endblock %}

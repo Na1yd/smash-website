@@ -47,7 +47,7 @@ def characters(id):
     cur = conn.cursor()
     cur.execute(
             "SELECT name, How_to_play_matchup,Pdko_percent_ps2,"
-            "Apdk_percent_ps2 FROM Character WHERE id=?", (id,))
+            "Apdko_percent_ps2 FROM Character WHERE id=?", (id,))
     Character = cur.fetchone()
     columns = [desc[0] for desc in cur.description] if cur.description else []
     CharacterFields = list(zip(columns, Character)) if Character else []
