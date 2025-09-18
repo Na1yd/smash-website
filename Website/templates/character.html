@@ -6,7 +6,11 @@
     alt="{{ Character[0] }}">
 {% for label, value in CharacterFields %}
   {% if value != 2 %}
-    <p class="info-text"><strong>({{ label }}) :</strong> {{ value }}</p>
+    {% set label_display = label %}
+    {% if label in ['Apdk_percent_ps2', 'Apdko_percent_ps2', 'Apdko_percents_ps2', 'Pdko_percent_ps2', 'Pdko_percents_ps2'] %}
+      {% set label_display = label.replace('_', '') %}
+    {% endif %}
+    <p class="info-text"><strong>({{ label_display }}) :</strong> {{ value }}</p>
   {% endif %}
 {% endfor %}
 {% endblock %}
