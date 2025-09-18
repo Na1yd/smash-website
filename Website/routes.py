@@ -48,9 +48,11 @@ def characters(id):
     cur.execute(
             "SELECT name, How_to_play_matchup,Pdko_percent_ps2,"
             "Apdk_percent_ps2 FROM Character WHERE id=?", (id,))
-    conn.commit()
     Character = cur.fetchone()
-    return render_template('character.html', Character=Character)
+    columns = [desc[0] for desc in cur.description] if cur.description else []
+    CharacterFields = list(zip(columns, Character)) if Character else []
+    conn.close()
+    return render_template('character.html', Character=Character, CharacterFields=CharacterFields)
 
 
 @app.route("/Game_Franchises/<int:id>")
@@ -72,3 +74,4 @@ def tech():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
