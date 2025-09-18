@@ -8,6 +8,10 @@ body {
 
 }
 
+.errortitle{
+    color: rgb(103, 105, 148) ;
+}
+
 .header {
     margin-bottom: 40px;
 }

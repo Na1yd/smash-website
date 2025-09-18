@@ -55,18 +55,6 @@ def characters(id):
     return render_template('character.html', Character=Character, CharacterFields=CharacterFields)
 
 
-@app.route("/Game_Franchises/<int:id>")
-def Game_Franchise(id):
-    conn = sqlite3.connect("Dk.db")
-    cur = conn.cursor()
-    cur.execute(
-            "SELECT Franchise , character1,character1,character1,"
-            "character1,character1 FROM Game_Franchise WHERE id=?", (id,))
-    conn.commit()
-    Game_Franchise = cur.fetchone()
-    return render_template('Game_Franchise.html', Game_Franchise=Game_Franchise)
-
-
 @app.route("/tech")
 def tech():
     return render_template("tech.html")
